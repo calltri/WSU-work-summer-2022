@@ -1,6 +1,8 @@
 # https://cran.r-project.org/web/packages/dendextend/vignettes/dendextend.html
 
-### Installing ###
+### First time setup ###
+chooseCRANmirror()
+install.packages("BiocManager")
 BiocManager::install("dendextend") # plotting phylo/tanglegrams
 install.packages("viridis") # for adding color ramps 
 
