@@ -1,7 +1,9 @@
+rm -r -f $(pwd)/phame_examples # clean last run
+git clone https://github.com/mshakya/phame_examples.git
 
 # Configs 
-FOLDER_TO_MOUNT=$(pwd)/test # folder with refdir, workdir, and the control file
-CTL_FILE=test.ctl # Name of the control file in the FOLDER_TO_MOUNT
+FOLDER_TO_MOUNT= $(pwd)/phame_examples/ecoli # folder with refdir, workdir, and the control file
+CTL_FILE=ecoli.ctl # Name of the control file in the FOLDER_TO_MOUNT
 PHAME_IMG=quay.io/biocontainers/phame:1.0.3--0 # the docker image to use, this will auto download if it doesn't exist
 
 ################################
@@ -17,3 +19,4 @@ echo === Starting docker container ===
 cmd="MSYS_NO_PATHCONV=1 docker run --rm -t -v $FOLDER_TO_MOUNT:/data $PHAME_IMG bash -c 'phame /data/$CTL_FILE'"
 echo $cmd # print cmd 
 eval $cmd
+

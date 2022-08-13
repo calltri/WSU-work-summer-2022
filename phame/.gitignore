@@ -1,3 +1,4 @@
 demo/phame_examples/
-test/refdir/
-test/workdir/
+TEMPLATE/refdir/
+TEMPLATE/workdir/
+TEMPLATE/output/
