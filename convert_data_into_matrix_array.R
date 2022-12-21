@@ -5,7 +5,7 @@
 # strain1   b   c   NA  NA
 # strain2   a   b   c   d
 # to form:
-#           g1  g2  g3  g4
+#           a   b   c   d
 # strain1   0   1   1   0
 # strain2   1   1   1   1
 #
